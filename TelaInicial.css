@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: "RobotoFlex";}
+
+@font-face {
+    font-family: "Potato_sans-Black.otf";
+    src: url(/fonts/Potato_sans-Black.otf);}
+@font-face {
+    font-family: "Potato_sans-Bold.otf";
+    src: url(/fonts/Potato_sans-Bold.otf);}
+@font-face {
+    font-family: "RobotoFlex";
+    src: url(/fonts/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf);}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height: 96px;
+    align-items: center;}
+
+.logo{
+    height: 63px;
+    width: 209px;}
+
+.barra{
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2); 
+    gap: 40px;
+    height: 70px;
+    background-color: #204084;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+input{
+    color: black;
+    padding-left: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2); 
+    margin-left: 15px;
+    margin-right: 40px;
+    width: 721px;
+    border-radius: 7px;
+    height: 44px;}
+
+.pesquisa{
+    display: flex;
+    justify-content: space-between;}
+
+.icon{
+    height: 35px;
+    width: 35px;}
+
+.enviar{
+    background-color: transparent;}
+
+.foto{
+    display: flex;
+    justify-content: center;
+    /* display: block; */
+    flex-direction: column;
+    background-image: url(/imgs/victor.png);
+    height: 700px;}
+
+.comprar{
+    font-size: 20px;
+    margin-left: 150px;
+    border-radius: 7px;
+    background-color: white;
+    width: 257px;
+    height: 60px;}
+
+h1{
+    margin-left: 150px;
+    font-size: 80px;
+    color: white;
+    font-weight: 700;
+    opacity: 50px;}
+
+.sub{
+    margin-left: 150px;
+    font-size: 50px;
+    color: white;
+    font-weight: 300;
+    opacity: 50px;
+}
+
+
