@@ -2,7 +2,8 @@
     margin: 0;
     border: 0;
     padding: 0;
-    font-family: "RobotoFlex";}
+    font-family: "RobotoFlex";
+    outline: 0;}
 
 @font-face {
     font-family: "Potato_sans-Black.otf";
@@ -27,7 +28,7 @@ header{
 
 .barra{
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2); 
-    gap: 40px;
+    gap: 20px;
     height: 70px;
     background-color: #204084;
     display: flex;
@@ -39,7 +40,7 @@ input{
     padding-left: 20px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2); 
     margin-left: 15px;
-    margin-right: 40px;
+    margin-right: 140px;
     width: 721px;
     border-radius: 7px;
     height: 44px;}
@@ -63,27 +64,228 @@ input{
     background-image: url(/imgs/victor.png);
     height: 700px;}
 
-.comprar{
-    font-size: 20px;
-    margin-left: 150px;
-    border-radius: 7px;
-    background-color: white;
-    width: 257px;
-    height: 60px;}
+
+
+    .comprar {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-left: 150px;
+        border-radius: 7px;
+        width: 257px;
+        height: 60px;
+        z-index: 1;
+        position: relative;
+        color: black;
+        padding: 0.5em 1em;
+        outline: none;
+        border: none;
+        background-color: white
+      }
+      
+      .comprar::before {
+        border-radius: 7px;
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #594e3d;
+        transform-origin: center right;
+        transform: scaleX(0);
+        transition: transform 0.25s ease-in-out;
+      }
+      
+      .comprar:hover {
+        
+        font-weight: 500;
+        border-radius: 7px;
+        color: white;
+        cursor: pointer;
+      }
+      
+      .comprar:hover::before {
+        transform-origin: center left;
+        transform: scaleX(1);
+      }
+      
+
+
 
 h1{
+    height: 70px;
     margin-left: 150px;
     font-size: 80px;
     color: white;
-    font-weight: 700;
-    opacity: 50px;}
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.803) ;}
 
 .sub{
     margin-left: 150px;
     font-size: 50px;
-    color: white;
-    font-weight: 300;
-    opacity: 50px;
+    color: rgba(255, 255, 255, 0.803);
+    font-weight: 500;
+    opacity: 180px;}
+
+.slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+h2{
+    font-weight: 500;
+    font-size: 20px;}
+.preco{
+    font-weight: 900;
+    font-size: 20px}
+
+.compra{
+    background-color: #FAFAFA;
+    height: 300px;
+    width: 320px;}
+
+.carrossel{
+    text-align: center;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 60px;}
+
+
+
+.container{
+    margin: 40px 20px 30px 30px ;
+    position: relative;
+    width: 1400px;
+    overflow:hidden;}
+
+.controle{
+    position: absolute;
+    top: 50%;
+    /* background-color: black; */
+    color: black;
+    padding: 10px;
+    font-size: 54px;
+    z-index: 10;
+    cursor: pointer;
+    background-color: white;}
+
+    #anterior{
+        left: 10px;
+        background-color: transparent;
+        margin-right: 130px;}
+    
+    #proximo{
+        right: 10px;
+        background-color: transparent;
+        margin-left: 130px;
+    }
+
+.mund{
+    justify-content: center;
+    display: flex;
+    background-color: #c2945833;
+    margin-top: 40px;
+    margin-bottom: 20px;}
+
+.filtros{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-left: 100px;
+    gap: 30px;
+    display: flex;}
+
+.filtro{
+    font-size: 30px;
+    font-weight: 500;}
+
+h3{
+    margin-left: 80px;
+    margin-top: 30px;
+    font-size: 40px;}
+
+.linha{
+    margin-left: 80px;
+    background-color: black;
+    color: black;
+    height: 1.5px;
+    margin-right: 30px;}
+
+.teste{
+    align-items:  center;
+    display: flex;
+    gap: 10px;}
+
+.botao{
+    background-color: transparent;
+    border: solid black ;
+    font-size: 20px;
+    width: 150px;}
+
+.pack{
+    margin-left: 50px;
+    text-align: center;}
+
+.linhacompra1{
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 40px;}
+
+.camisa{
+    height: 280px;
+    width: 280px;
 }
+
+.botao {
+    font-size: 20px;
+    width: 150px;
+    z-index: 1;
+    position: relative;
+    color: black;
+    padding: 0.5em 1em;
+    background-color:transparent;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+  }
+  
+.botao::before {
+    border: solid black ;
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: black;
+    transform-origin: center;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+  }
+  
+.botao:hover {
+    border: solid black ;
+    cursor: pointer;
+    color: white;
+  }
+  
+.botao:hover::before {
+    border: solid black ;
+    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+  }
+
+.filter{
+    height: 40px;
+    width: 35px;
+}
+  
+
+
+
 
 

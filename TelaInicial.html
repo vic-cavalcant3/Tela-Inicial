@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dalaje</title>
     <link rel="stylesheet" href="TelaInicial.css">
-    <script src="TelaInicial.js"></script>
+    
 
 </head>
 <body>
     <header class="top">
-        <img src="/imgs/logo.png" alt="" class="logo">
+        <img src="/imgs/icons/logo.png" alt="" class="logo">
     </header>
 
     <section class="barra">
         <div class="pesquisa">
-        <button onclick="enviar" class="enviar"><img src="/imgs/lupa.png" alt="" class="icon"></button>
+        <button onclick="enviar" class="enviar"><img src="/imgs/icons/lupa.png" alt="" class="icon"></button>
         <input type="text" name="textbox" id="" placeholder="Pesquise aqui"> </div>
 
-        <a href="" class="navegar"> <img src="/imgs/game.png" alt="" class="icon">  </a>
-        <a href="" class="navegar"> <img src="/imgs/cont.png" alt="" class="icon">  </a>
-        <a href="" class="navegar"> <img src="/imgs/carin.png" alt="" class="icon"> </a>
-        <a href="" class="navegar"> <img src="/imgs/menu.png" alt="" class="icon">  </a> 
+        <a href="" class="navegar"> <img src="/imgs/icons/game.png" alt="" class="icon">  </a>
+        <a href="" class="navegar"> <img src="/imgs/icons/cont.png" alt="" class="icon">  </a>
+        <a href="" class="navegar"> <img src="/imgs/icons/carin.png" alt="" class="icon"> </a>
+        <a href="" class="navegar"> <img src="/imgs/icons/menu.png" alt="" class="icon">  </a> 
     </section>
 
     <section class="foto">
@@ -30,8 +30,117 @@
         <button class="comprar">COMPRAR AGORA</button>
     </section>
 
+    <div class="container">
+        <button onclick="anterior()" id="anterior" class="controle"><</button>
+        <div class="carrossel">
+            
+            <div class="slide">
+                <img src="/imgs/CARROSEL/camisa1.png" alt="" class="compra">
+                <h2>Camiseta do santos 2011</h2>
+                <p class="preco">R$30,00</p>
+            </div>
+
+            <div class="slide">
+                <img src="/imgs/CARROSEL/camisa2.png" alt="" class="compra">
+                <h2>Camisa Vasco Da Gama 2024 </h2>
+                <p class="preco">R$35,00</p>
+            </div>
+
+            <div class="slide">
+                <img src="/imgs/CARROSEL/camisa3.png" alt="" class="compra">
+                <h2>Camiseta azul da Argentina 2006 </h2>
+                <p class="preco">R$32,00</p>
+            </div>
+
+            <div class="slide">
+                <img src="/imgs/CARROSEL/camisa4.png" alt="" class="compra">
+                <h2>Camisa Corinthians Polo 1990 </h2>
+                <p class="preco">R$22,00</p>
+            </div>
+
+             <div class="slide">
+                <img src="/imgs/CARROSEL/camisa5.png" alt="" class="compra">
+                <h2>Camiseta Arsenal- 2010 </h2>
+                <p class="preco">R$33,00</p>
+            </div>
+
+             <div class="slide">
+                <img src="/imgs/CARROSEL/camisa6.png" alt="" class="compra">
+                <h2>Camiseta Fluminense 2024 </h2>
+                <p class="preco">R$28,00</p>
+            </div>
+
+            <div class="slide">
+                <img src="/imgs/CARROSEL/camisa7.png" alt="" class="compra">
+                <h2>Inter de Milão Home 2009-10 Diego Milito </h2>
+                <p class="preco">R$40,00</p>
+            </div>
+
+            <div class="slide">
+                <img src="/imgs/CARROSEL/palmeiras.png" alt="" class="compra">
+                <h2>Camiseta Palmeiras CREFISA 24/25 </h2>
+                <p class="preco">R$45,00</p>
+            </div> 
 
 
+            
+
+        </div>
+        <button onclick="proximo()" id="proximo" class="controle">></button>
+    </div>
+
+    <div class="mund">
+        <img src="/imgs/mundo.png" alt="" class="mundinho">
+    </div>
+
+    <h3>PRINCIPAIS COMPRAS</h3>
+    <div class="linha"></div>
+
+    <div class="filtros">
+
+        <div class="teste">
+            <p class="filtro">FILTROS</p>
+            <img src="/imgs/icons/filter.png" alt="" class="filter">
+        </div>
+        <button class="botao ">Camisas</button>
+        <button class="botao ">Blusas</button>
+        <button class="botao ">Calça</button>
+        <button class="botao ">Short</button>
+        <button class="botao ">Acessorios</button>
+    </div>
+
+
+
+    <div class="linhacompra1">
+        <div class="pack">
+            <img src="/imgs/COMPRAS/1.png" alt="" class="camisa">
+            <h2>Camisa dos Santos -
+                2011 </h2>
+            <p class="preco">R$30,00</p>
+        </div>
+
+        <div class="pack">
+            <img src="/imgs/COMPRAS/2.png" alt="" class="camisa">
+            <h2>Camiseta Arsenal- 
+                2010</h2>
+            <p class="preco">R$45,00</p>
+        </div>
+        <div class="pack">
+            <img src="/imgs/COMPRAS/3.png" alt="" class="camisa">
+            <h2>Camiseta Brasil</h2>
+            <p class="preco">R$10,00</p>
+        </div>
+        
+        <div class="pack">
+            <img src="/imgs/COMPRAS/4.png" alt="" class="camisa">
+            <h2>Camiseta Fluminense 2024 </h2>
+            <p class="preco">R$25,00</p>
+        </div>
+    </div>
+
+
+
+        <script src="TelaInicial.js"></script>
 
 </body>
 </html>
